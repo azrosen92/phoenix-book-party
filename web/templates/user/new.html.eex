@@ -1,0 +1,9 @@
+<div class="jumbotron">
+    <h2>Welcome</h2>
+    <h3>To the Party</h3>
+
+    <%= render "form.html", changeset: @changeset,
+                        action: user_path(@conn, :create) %>
+
+    <%= link "Back", to: user_path(@conn, :index) %>
+</div>

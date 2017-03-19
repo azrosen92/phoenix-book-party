@@ -1,0 +1,9 @@
+<div class="jumbotron">
+    <h2>Welcome</h2>
+    <h3>To BookParty</h3>
+
+    <form>
+        <label for="email">Sign Up Here</label>
+        <input type="email" name="email">
+    </form>
+</div>

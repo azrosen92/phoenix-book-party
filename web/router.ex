@@ -17,6 +17,12 @@ defmodule BookParty.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/welcome", UserController, :new
+    post "/signup", WelcomeController, :signup
+
+    resources "/users", UserController
+    resources "/parties", PartyController
+    resources "/emails", EmailController
   end
 
   # Other scopes may use custom stacks.
